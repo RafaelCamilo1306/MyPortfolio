@@ -1,12 +1,23 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFF9B5;
+  --foreground: #1C3324;
+  --blueprint: #0e2a47;
+  --blueprint-deep: #0a1f38;
+  --grid-line: rgba(226, 235, 250, 0.07);
+  --grid-line-strong: rgba(226, 235, 250, 0.14);
+  --paper: #f5f1e8;
+  --paper-line: #d9d0ba;
+  --ink: #14213a;
+  --accent: #e2793a;
+  --accent-soft: rgba(226, 121, 58, 0.16);
+  --text-soft: #b7c5de;
+  --white: #f7f8fb;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1C3324;
+    --foreground: #FFF9B5;
   }
 }
 
@@ -41,6 +52,25 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.project-thumb {
+  border-bottom: 1px solid var(--paper-line);
+}
+
+.badge-role {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  border: 1px solid var(--paper-line);
+  padding: 0.3rem 0.6rem;
+  border-radius: 2px;
+}
+
+.project-card-footer {
+  border-top: 1px solid var(--paper-line);
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {

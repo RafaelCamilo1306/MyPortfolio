@@ -1,21 +1,37 @@
 .page {
-  --background: #fafafa;
-  --foreground: #fff;
-
   --text-primary: #000;
   --text-secondary: #666;
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
-
   display: flex;
   flex: 1;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
   font-family: var(--font-geist-sans);
   background-color: var(--background);
+  
+}
+.title {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-geist-sans);
+  z-index: 1000;
+  background: var(--background);
+  border-bottom: 1px solid var(--paper-line);
+}
+
+.content {
+  position: relative;
+  display: flex;
+  padding-top: 8rem; /* ajuste conforme a altura real do .title */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .main {
@@ -129,8 +145,6 @@ a.secondary {
   }
 
   .page {
-    --background: #000;
-    --foreground: #000;
 
     --text-primary: #ededed;
     --text-secondary: #999;
