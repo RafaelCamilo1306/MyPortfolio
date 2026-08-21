@@ -22,7 +22,7 @@ export default function Navigation(page) {
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="../../">Home</a>
               </li>
-              <li className="nav-item"><a className="nav-link" href="#">About</a></li>
+              <li className="nav-item"><a className="nav-link" href="../pages/About">About</a></li>
               <li className="nav-item">
                 <a className="nav-link" href="../pages/Projects">Projects</a>
               </li>

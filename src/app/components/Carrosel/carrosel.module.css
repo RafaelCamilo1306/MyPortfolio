@@ -1,7 +1,20 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .carrosel_item {
+  width: 100%;
   height: 500px;
 }
 .carrosel_item svg {
   height: 100%;
   width: 100%;
+}
+
+:global(.carousel-control-prev-icon),
+:global(.carousel-control-next-icon) {
+  filter: brightness(0) saturate(100%) invert(8%) sepia(63%) saturate(1430%) hue-rotate(185deg) brightness(98%) contrast(96%);
+  /* ajuste os valores até bater com a cor que você quer, ex: usando um gerador de filter a partir de hex */
 }

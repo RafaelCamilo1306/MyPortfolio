@@ -6,21 +6,24 @@ import styles from "./carrosel.module.css";
 
 export default function Carrosel() {
   return (
-
-    <div id="myCarousel" className="carousel slide mb-5" data-bs-ride="carousel">
+             <div className="container">
+             <h2 className={`pb-2 border-bottom mb-5 ${styles.sectionTitle}`}>
+              My projects
+            </h2>
+    <div id="myCarousel" className="carousel slide mb-5 vw-100" data-bs-ride="carousel" style={{ left: "-98%", transform: "translateX(50%)" }}>
         <div className="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" className=""></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" className="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="" aria-label="Slide 1" style={{ backgroundColor: "var(--blueprint-deep)" }}></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" className="" style={{ backgroundColor: "var(--blueprint-deep)" }}></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" className="active" aria-current="true" style={{ backgroundColor: "var(--blueprint-deep)" }}></button>
         </div>
         <div className="carousel-inner">
             {projects.map((project, index) => (
           <div className={`carousel-item ${index === 0 ? 'active' : ''} ${styles.carrosel_item}`} key={project.id}>
             <svg aria-hidden="true" className="bd-placeholder-img" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+              <rect width="100%" height="100%" fill="var(--paper-line)"></rect>
             </svg>
             <div className="container">
-              <div className="carousel-caption text-start">
+              <div className="carousel-caption text-start" style={{ color: "var(--blueprint-deep) !important" }}>
                 <h1>{project.title}</h1>
                 <p className="opacity-75">
                   {project.description}
@@ -36,7 +39,7 @@ export default function Carrosel() {
 
         ))}
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <button className="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev" >
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Previous</span>
         </button>
@@ -45,5 +48,5 @@ export default function Carrosel() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-
+</div>
   )};

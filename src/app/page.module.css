@@ -4,7 +4,6 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  align-items: center;
   justify-content: top;
   font-family: var(--font-geist-sans);
   background-color: var(--background);
@@ -29,6 +28,12 @@
   position: relative;
   display: flex;
   padding-top: 8rem; /* ajuste conforme a altura real do .title */
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;

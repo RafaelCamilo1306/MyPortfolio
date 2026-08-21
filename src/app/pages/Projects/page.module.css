@@ -1,0 +1,34 @@
+.page {
+  --text-primary: #000;
+  --text-secondary: #666;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center; 
+  font-family: var(--font-geist-sans);
+  background-color: var(--background);
+  
+}
+.title {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-geist-sans);
+  z-index: 1000;
+  background: var(--background);
+  border-bottom: 1px solid var(--paper-line);
+}
+.content {
+  position: relative;
+  display: flex;
+  padding-top: 8rem; /* ajuste conforme a altura real do .title */
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
