@@ -2,6 +2,8 @@
 
 import { projects } from "../projects";
 import React from "react";
+import Image from "next/image";
+import styles from "./projectsCards.module.css";
 
 export default function Projects() {
   return (
@@ -20,30 +22,16 @@ export default function Projects() {
               <p className="lead">{project.description}</p>
             </div>
             <div className={`col-md-5 ${index % 2 !== 0 ? "order-md-1" : ""}`}>
-              <svg
-                aria-label="Placeholder: 500x500"
-                className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                height="500"
-                preserveAspectRatio="xMidYMid slice"
-                role="img"
-                width="500"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Placeholder</title>
-                <rect
-                  width="100%"
-                  height="100%"
-                  fill="var(--bs-secondary-bg)"
-                ></rect>
-                <text
-                  x="50%"
-                  y="50%"
-                  fill="var(--bs-secondary-color)"
-                  dy=".3em"
-                >
-                  500x500
-                </text>
-              </svg>
+              <div className={styles.imageWrapper}>
+                  <Image
+                    src={project.img}
+                    alt={project.title}
+                    className={styles.cardImage}
+                    fill
+                    unoptimized
+                    sizes="(max-width: 768px) 100vw, 600px"
+                  />
+                </div>
             </div>
           </div>
           <hr className="featurette-divider" />
