@@ -17,14 +17,14 @@ export default function Navigation({ homePageUrl = "/" }) {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/About">
+                <Link className="nav-link" href="/pages/About">
                   About
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/pages/Projects">Projects</Link>
               </li>
-              <li className="nav-item"><Link className="nav-link" href="/Contact">Contact</Link></li>
+              <li className="nav-item"><Link className="nav-link" href="/pages/Contact">Contact</Link></li>
             </ul>
           </div>
         </div>
