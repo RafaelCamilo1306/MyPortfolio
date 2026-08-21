@@ -3,6 +3,7 @@ const nextConfig = {
   /* config options here */
   reactCompiler: true,
   output: 'export',
+  basePath: '/MyPortfolio',
   images: {
     unoptimized: true,
   },
