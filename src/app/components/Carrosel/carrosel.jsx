@@ -10,7 +10,7 @@ export default function Carrosel() {
              <h2 className={`pb-2 border-bottom mb-5 ${styles.sectionTitle}`}>
               My projects
             </h2>
-    <div id="myCarousel" className="carousel slide mb-5 vw-100" data-bs-ride="carousel" style={{ left: "-98%", transform: "translateX(50%)" }}>
+    <div id="myCarousel" className="carousel slide mb-5 vw-100" data-bs-ride="carousel" style={{ left: "50%", transform: "translateX(-50%)" }}>
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="" aria-label="Slide 1" style={{ backgroundColor: "var(--blueprint-deep)" }}></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" className="" style={{ backgroundColor: "var(--blueprint-deep)" }}></button>
