@@ -4,6 +4,7 @@ const nextConfig = {
   reactCompiler: true,
   output: 'export',
   basePath: '/MyPortfolio',
+  assetPrefix: '/MyPortfolio',
   images: {
     unoptimized: true,
   },

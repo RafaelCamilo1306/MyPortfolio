@@ -6,11 +6,23 @@
 
 .carrosel_item {
   width: 100%;
-  height: 500px;
+  height: 700px;
 }
-.carrosel_item svg {
-  height: 100%;
+.carouselImage {
   width: 100%;
+  height: 100%;
+  object-fit: stretch;
+  background-color: var(--paper-line);
+  object-position: center;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+background: #D9D0BA;
+background: linear-gradient(0deg, rgba(217, 208, 186, 1) 26%, rgba(199, 87, 87, 0) 67%);
+  pointer-events: none; /* não bloqueia cliques no link "Ver no GitHub" */
+  z-index: 0;
+  height: 100%;
 }
 
 :global(.carousel-control-prev-icon),

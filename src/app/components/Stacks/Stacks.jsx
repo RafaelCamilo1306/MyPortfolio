@@ -1,6 +1,6 @@
 "use client";
 
-import { stacks } from "./stacks";
+import { stacks } from "./stacksData";
 import styles from "./stacks.module.css";
 
 function StackGroup({ title, items }) {
